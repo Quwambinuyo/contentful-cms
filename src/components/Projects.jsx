@@ -1,8 +1,11 @@
 import React from "react";
-import "../fetchProjects";
+import { useFetchProject } from "../fetchProjects";
 
 const Projects = () => {
-  return <h2>Projects</h2>;
+  const { loading, projects } = useFetchProject();
+  console.log(projects);
+
+  return <h2></h2>;
 };
 
 export default Projects;
